@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Photography</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="ideas.html">Ideas Tracker</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h2>Shop Prints</h2>
+    <div class="sort-filter">
+      <select id="sortOptions" onchange="sortProducts()">
+        <option value="default">Sort By</option>
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+
+    <div id="productList" class="products">
+      <div class="product" data-price="50" data-rating="4">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
+        <h3>Nature Print</h3>
+        <p>$50 - ⭐⭐⭐⭐</p>
+      </div>
+      <div class="product" data-price="30" data-rating="5">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400">
+        <h3>Portrait Print</h3>
+        <p>$30 - ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="product" data-price="40" data-rating="3">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=400">
+        <h3>Urban Print</h3>
+        <p>$40 - ⭐⭐⭐</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

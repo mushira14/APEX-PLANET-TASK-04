@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Photography</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="ideas.html">Ideas Tracker</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h2>Photo Gallery</h2>
+    <!-- Filters -->
+    <div class="filters">
+      <button onclick="filterGallery('all')">All</button>
+      <button onclick="filterGallery('nature')">Nature</button>
+      <button onclick="filterGallery('portrait')">Portrait</button>
+      <button onclick="filterGallery('urban')">Urban</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" class="nature">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" class="portrait">
+      <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600" class="urban">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600" class="nature">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" class="portrait">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+header {
+  background: #111;
+  padding: 15px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #f39c12;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #f39c12;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3em;
+  color: #f39c12;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f39c12;
+  color: #111;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.page-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-img {
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+.todo-container input, .todo-container button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+form input, form textarea, form button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
